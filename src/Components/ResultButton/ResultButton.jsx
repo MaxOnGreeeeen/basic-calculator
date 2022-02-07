@@ -1,18 +1,10 @@
 import React from 'react';
-
+import classes from './Result.module.css'
 const ResultButton = (props) => {
 
-    const increaseValue = () =>{
-
-    }
-
-    const dicreaseValue = () =>{
-
-    }
-
     return (
-        <div className = "button-1 button-2"
-            onClick = {() => props.onClick(eval(props.finalResult))}>
+        <div className = {classes.button2}
+            onClick = {() => props.onClick(props.children)}>
             <div>
                 {props.children}
             </div>

@@ -1,3 +1,9 @@
+/*Подключение локальных шрифтов*/
+@font-face {
+    font-family: 'Digital Font 1';
+    src: url(/public/assets/digital-7/digital-7.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,26 +12,19 @@
 
 }
 #root{
+    font-family: 'Digital Font 1';
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
-}
-.app{
 
 }
-.button-1{
-    height: 4em;
-    width: 100%;
-    font-size: 1.4em;
-    background: #d9d4d9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline: 1px solid brown;
-    cursor: pointer;
+.App{
+    background: #402a2a;
+    border-radius: 5%;
 }
+
 .button-desk{
     width: 400px;
     height: 600px;
@@ -34,20 +33,18 @@
     display: flex;
     width: 100%;
 }
-.button-2{
-    background: chocolate;
-    cursor: pointer;
-}
+
 .result-window{
+    border-radius: 25px 25px 0 0;
     height: 4em;
     width: 100%;
     font-size: 1.5em;
-    background: #000000;
+    background: black;
     color:white;
-    outline: 1px solid brown;
+    outline: 1px  brown;
     align-items: end;
     justify-content: right;
 }
-.result{
 
-}
+
+

@@ -1,0 +1,15 @@
+.button2{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    margin: 0.1em;
+    border-radius: 50%;
+    height: 4em;
+    width: 100%;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 1px brown;
+    cursor: pointer;
+    background: chocolate;
+    color: white;
+}

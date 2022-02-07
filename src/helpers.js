@@ -1,12 +1,15 @@
 
 const caluclate = (value) =>{
-    const parsed = parse(value);
-
-    return eval(parsed);
+    //this won't work anyway
+    const parsedAndCheckeValue = parse(value);
+    return eval(value)
 }
 
 const parse = (value) =>{
-    return value;
+    const regExp = new RegExp( /\([+-]?([0-9]*[.])?[0-9]+\)|[+-]?([0-9]*[.])?[0-9]+[-+/*]?([0-9]*[.])?[0-9]+/g);
+    const result = value.match(regExp);
+    console.log(result);
+    return result;
 }
 
 const inc = (value) =>{

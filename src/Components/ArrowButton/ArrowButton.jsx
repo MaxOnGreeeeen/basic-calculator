@@ -1,10 +1,9 @@
 import React from 'react';
-
+import classes from './Arrow.module.css'
 const ArrowButton = (props) => {
 
     return (
-        <div className = "button-1 button-2"
-            onClick = {() => props.onClick(eval(props.finalResult))}>
+        <div className = {classes.button2}>
             <div>
                 {props.children}
             </div>

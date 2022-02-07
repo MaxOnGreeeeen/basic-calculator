@@ -1,9 +1,8 @@
 import React from 'react';
-
+import classes from './Clear.module.css'
 const ClearButton = (props) => {
     return (
-
-        <div className = "button-1 button-2"
+        <div className = {classes.button2}
             onClick = {() => props.onClick(props.handleClear)}>
             <div>
                 {props.children}
